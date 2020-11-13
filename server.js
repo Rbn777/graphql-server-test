@@ -7,7 +7,7 @@ var schema = buildSchema(`
     type Query {
         course(id: Int!): Course
         courses(topic: String): [Course]
-        coursesContain(title: String): Course
+        coursesContain(title: String): [Course]
     }
     type Mutation {
         updateCourseTopic(id: Int!, topic: String!): Course
